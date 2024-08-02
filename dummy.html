@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="readmore.css">
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        .places {
+            text-align: center;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .places-heading {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .place {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #a64141;
+            background-color: #fff;
+            height:300px;
+        }
+
+        .place img {
+            width: 47%;
+            height: auto;
+            margin-right: 20px;
+            border: none;
+        }
+
+        .description {
+            width: 70%;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #090909;
+            color: #fff;
+            width: 100%;
+        }
+
+        .buy-now {
+            position: fixed;
+            font-size: 25px;
+            bottom: 50px;
+            right: 50px;
+            padding: 20px 50px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .highlights, .full-description, .about {
+            padding: 20px;
+        }
+
+        .highlights ul, .about ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .full-description a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="places">
+        <h2 class="places-heading">Places covered are</h2>
+        <div class="place">
+            <img src="images/goa/aguada.jpg" alt="Place 1">
+            <div class="description">
+                <h3>Place 1</h3>
+                <div class="stars">★★★★★</div>
+                <p>Description of Place 1.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="images/goa/baga.jpg" alt="Place 2">
+            <div class="description">
+                <h3>Place 2</h3>
+                <div class="stars">★★★★☆</div>
+                <p>Description of Place 2.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="images/goa/bom.jpg" alt="Place 3">
+            <div class="description">
+                <h3>Place 3</h3>
+                <div class="stars">★★★★☆</div>
+                <p>Description of Place 3.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="images/goa/mahadeva.jpg" alt="Place 4">
+            <div class="description">
+                <h3>Place 4</h3>
+                <div class="stars">★★★☆☆</div>
+                <p>Description of Place 4.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="images/goa/varca.jpg" alt="Place 5">
+            <div class="description">
+                <h3>Place 5</h3>
+                <div class="stars">★★★★★</div>
+                <p>Description of Place 5.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="highlights">
+        <h2>Highlights</h2>
+        <ul>
+            <li>Discover some of the country's most impressive national parks</li>
+            <li>See an incredible variety of wildlife, such as moose, bears and wolves</li>
+            <li>Walk deep into Bryce Canyon and explore the hoodoos</li>
+            <li>Experience an eruption at Old Faithful</li>
+            <li>Soak in the boiling river at Yellowstone National Park</li>
+        </ul>
+    </div>
+    <div class="full-description">
+        <h2>Full Description</h2>
+        <p><strong>Day 1 — Las Vegas to Bryce Canyon National Park via Cedar Breaks</strong></p>
+        <p>Drive through Cedar Breaks to the 10,000 ft. summit and take in spectacular views of ancient lava flows and the Sevier River Valley below. Arrive at Bryce...</p>
+        <a href="#">See more</a>
+    </div>
+    <div class="about">
+        <h2>About This Activity</h2>
+        <ul>
+            <li>Free cancellation</li>
+            <li>Duration 7 days</li>
+            <li>Live tour guide: English</li>
+            <li>Private or small groups available</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </footer>
+
+    <button class="buy-now">Buy Now</button>
+</body>
+</html>
